@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <meta name="author" content="Banh Ngoc Nhu Y">
+        <link rel="stylesheet" href="form.css">
+        
+    </head>
+</html>
+<body>
+    <div class="container">
+        <div class="title">Registration Form</div>
+        <form>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Student ID</span>
+                    <input type="text" placeholder="Enter your BC ID " required></div>
+                <div class="input-box">
+                    <span class="details">Full name</span>
+                    <input type="text" placeholder="Enter your full name" required></div>
+                <div class="input-box">
+                    <span class="details">Date of birth</span>
+                    <input type="text" placeholder="mm/dd/yyyy" required></div>
+                <div class="input-box" id="gender">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <span class="details" id="">Gender</span>  
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                    </div>
+                    </div>
+            </div> 
+            <div class="row">
+            <div  class="list">
+                <span class="listtitle">Subjects List</span><br>
+                <select multiple id="leftlist" class="content">
+                    <option value="1">Information System Management</option>
+                    <option value="2">Programming II</option>
+                    <option value="3">Web Authoring</option>
+                    <option value="3">Biology</option>
+                </select>
+            </div>
+            <div id="btnlist" class="buttonlist">
+                <br><button id="toRight">></button>
+                <button id="all_to_right">>></button>
+                <button id="toLeft"><</button>
+                <button id="all_to_left"><<</button>
+            </div>
+            
+            <div class="list">
+                <span class="listtitle">Registrations list</span><br>
+                <select id="rightlist" multiple class="content">
+                </select>
+
+            </div>
+        </div>
+                <div><br>
+                <input type="submit" class="button" >
+                </div>  
+            
+            </form></div>
+            <script src="form.js"></script>
+    
+</body>
